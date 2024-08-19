@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Text Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="chart.js"></script>
+</head>
+<body>
+    <h1>Advanced Text Analyzer</h1>
+    <button id="analyze-button">Text analysieren</button>
+    <button id="export-button">Ergebnisse exportieren</button>
+    <button id="settings-button">Einstellungen</button>
+    <div id="results" class="hidden">
+        <h2>Analyse Ergebnisse</h2>
+        <p id="word-count"></p>
+        <p id="most-common-words"></p>
+        <p id="most-common-phrases"></p>
+        <p id="readability"></p>
+        <canvas id="word-chart" width="300" height="200"></canvas>
+        <canvas id="length-distribution-chart" width="300" height="200"></canvas>
+        <h2>HTML-Elemente</h2>
+        <ul id="html-elements"></ul>
+    </div>
+    <div id="settings" class="hidden">
+        <h2>Einstellungen</h2>
+        <label for="keywords">Keywords (durch Komma getrennt):</label>
+        <input type="text" id="keywords" />
+        <button id="save-settings">Einstellungen speichern</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
